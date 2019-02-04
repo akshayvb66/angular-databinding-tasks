@@ -1,0 +1,7 @@
+<h2>Scenario 3</h2>
+<form>
+    <input type="text" #name name="value" [(ngModel)]="value"/>
+    <button (click)="save(name.value)">Submit</button>
+</form>
+
+<app-component2 [childMessage]="name.value"></app-component2>
